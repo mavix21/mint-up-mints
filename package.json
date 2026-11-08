@@ -1,0 +1,21 @@
+{
+  "name": "mint-up-mints",
+  "version": "0.0.0",
+  "description": "Scaffold for Mint Up! attendance credentials and an independent verification website.",
+  "scripts": {
+    "dev": "pnpm --filter @mint-up/verifier dev",
+    "build": "pnpm --filter @mint-up/verifier build",
+    "lint": "pnpm --filter @mint-up/verifier lint",
+    "typecheck": "pnpm --filter @mint-up/verifier typecheck",
+    "contracts:build": "stellar contract build",
+    "contracts:check": "cargo check --workspace",
+    "contracts:fmt": "cargo fmt --all --check"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": ">=20.9.0"
+  }
+}
